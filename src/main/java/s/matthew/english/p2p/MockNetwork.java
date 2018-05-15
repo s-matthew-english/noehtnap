@@ -1,4 +1,4 @@
-package s.matthew.english;
+package s.matthew.english.p2p;
 
 //import net.consensys.pantheon.ethereum.p2p.api.Message;
 //import net.consensys.pantheon.ethereum.p2p.api.P2PNetwork;
@@ -9,6 +9,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Consumer;
+import s.matthew.english.api.Message;
+import s.matthew.english.api.P2PNetwork;
+import s.matthew.english.api.Peer;
 
 
 /**
@@ -33,7 +36,7 @@ public class MockNetwork
 
         private final AtomicLong identifiers = new AtomicLong(0);
 
-        MockP2PNetwork(final Peer self. final Map<Peer, MockNetwork.MockP2PNetwork> connections) {
+        MockP2PNetwork(final Peer self, final Map<Peer, MockNetwork.MockP2PNetwork> connections) {
             this.self = self;
             this.connections = connections;
         }

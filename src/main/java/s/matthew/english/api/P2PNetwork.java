@@ -1,14 +1,14 @@
-package s.matthew.english;
+package s.matthew.english.api;
 
 //import net.consensys.pantheon.ethereum.p2p.eth.DisconnectReason;
 //import net.consensys.pantheon.ethereum.p2p.rlpx.Capability;
 
 import java.io.Closeable;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
+import s.matthew.english.p2p.Capability;
 
 public interface P2PNetwork extends Closeable, Runnable {
 
