@@ -3,8 +3,8 @@ package s.matthew.english.p2p;
 //import static net.consensys.pantheon.ethereum.p2p.wire.WireProtocol.wireError;
 //import static net.consensys.pantheon.util.bytes.BytesValue.wrap;
 
-//import net.consensys.pantheon.ethereum.rlp.RLPInput;
-//import net.consensys.pantheon.ethereum.rlp.RLPOutput;
+//import net.consensys.pantheon.ethereum.rlpx.RLPInput;
+//import net.consensys.pantheon.ethereum.rlpx.RLPOutput;
 //import net.consensys.pantheon.util.BytesValue;
 
 import java.nio.charset.StandardCharsets;

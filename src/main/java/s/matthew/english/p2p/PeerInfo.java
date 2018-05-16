@@ -3,9 +3,9 @@ package s.matthew.english.p2p;
 //import static net.consensys.pantheon.util.bytes.BytesValue.wrap;
 
 //import net.consensys.pantheon.ethereum.p2p.NetworkMemoryPool;
-//import net.consensys.pantheon.ethereum.rlp.BytesValueRLPOutput;
-//import net.consensys.pantheon.ethereum.rlp.RLPInput;
-//import net.consensys.pantheon.ethereum.rlp.RLPOutput;
+//import net.consensys.pantheon.ethereum.rlpx.BytesValueRLPOutput;
+//import net.consensys.pantheon.ethereum.rlpx.RLPInput;
+//import net.consensys.pantheon.ethereum.rlpx.RLPOutput;
 //import net.consensys.pantheon.util.bytes.BytesValue;
 //import net.consensys.pantheon.util.bytes.BytesValues
 

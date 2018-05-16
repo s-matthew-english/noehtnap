@@ -1,15 +1,9 @@
-package s.matthew.english.rlp;
+package s.matthew.english.p2p.rlpx;
 
 //import net.consensys.pantheon.util.Bytes32;
 //import net.consensys.pantheon.util.BytesValue;
 //import net.consensys.pantheon.util.UInt256;
 //import net.consensys.pantheon.util.UInt256Value;
-
-import java.math.BigInteger;
-import java.net.InetAddress;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Function;
 
 /**
  * An input used to decode data in ELP encoding.

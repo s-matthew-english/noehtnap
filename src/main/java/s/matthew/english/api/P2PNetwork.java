@@ -1,7 +1,7 @@
 package s.matthew.english.api;
 
 //import net.consensys.pantheon.ethereum.p2p.eth.DisconnectReason;
-//import net.consensys.pantheon.ethereum.p2p.rlpx.Capability;
+//import net.consensys.pantheon.ethereum.p2p.PeerInfo.Capability;
 
 import java.io.Closeable;
 import java.util.Collections;
