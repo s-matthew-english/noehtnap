@@ -1,4 +1,4 @@
-package s.matthew.english;
+package util;
 
 /**
  * A value made of bytes.
