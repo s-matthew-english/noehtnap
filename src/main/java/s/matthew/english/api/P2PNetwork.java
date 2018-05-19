@@ -9,6 +9,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import s.matthew.english.p2p.Capability;
+import util.DisconnectReason;
 
 public interface P2PNetwork extends Closeable, Runnable {
 

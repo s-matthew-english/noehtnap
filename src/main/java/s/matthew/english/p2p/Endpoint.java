@@ -1,5 +1,6 @@
 package s.matthew.english.p2p;
 
+import java.net.InetAddress;
 import java.util.Objects;
 import java.util.OptionalInt;
 
@@ -64,4 +65,38 @@ public class Endpoint {
      *
      * @param out The RLP output stream.
      */
+    public void encodeStandalone(RLPOutput out) {
+        out.startList();
+        encodeInline(out);
+        out.endList();
+    }
+
+    /**
+     * Encodes this endpoint to an RLP representation that is inlined into a containing object
+     * (generally a {@link Peer}).
+     * !!!
+     *
+     * @param out The RLP output stream.
+     */
+    public void encodeInline(RLPOutput out) {
+        out.writeInetAddress(InetAddress.forString(host));
+        out.writeUnsignedShort(udpPort);
+        if (tcpPort.isPresent()) {
+            out.writeUnsignedShort(tcpPort.getAsInt());
+        } else {
+            out.writeNull();
+        }
+    }
+
+    /**
+     * Decode the input stream as an Endpoint instance appearing inline within another object
+     * (generally a Peer).
+     *
+     * @param fieldCount The number of fields RLP list.
+     * @param in The RLP input stream from which to read.
+     * @return The decoded endpoint.
+     */
+    public static Endpoint decodeInline(RLPInput in, int fieldCount) {
+        InetAddress addr = in.read
+    }
 }

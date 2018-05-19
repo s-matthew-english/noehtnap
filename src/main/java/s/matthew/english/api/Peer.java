@@ -3,6 +3,8 @@ package s.matthew.english.api;
 //import net.consensys.pantheon.ethereum.rlpx.RLPOutput;
 //import net.consensys.pantheon.util.bytes.BytesValue;
 
+import s.matthew.english.p2p.Endpoint;
+
 import java.util.Random;
 
 //import com.google.common.annotations.VisibleForTesting;
@@ -32,7 +34,6 @@ public interface Peer {
    *
    * @return The generated peer ID.
    */
-  @VisibleForTesting
   static BytesValue randomId() {
     byte[] id = new byte[64];
     new Random().nextBytes(id);
